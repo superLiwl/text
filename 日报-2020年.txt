@@ -1,0 +1,106 @@
+=============================================================================================================================(2019年1月份)
+01月02日：小程序所有页面登陆token修改（碎片、卡券页面未修改）。
+01月03日：小程序分享功能添加50%，助力页面修改完成。
+----------------------------------------------------------------------------------------
+01月06日：小程序分享功能添加100%，页面刷新问题解决，小程序认证。
+		  服务团报退单处理。
+01月07日：小程序背包功能，背包分享功能。
+01月08日：小程序原生我的能量值页面改版。
+		  跟小程序前端沟通处理手机样式不兼容问题，及部分样式bug修改。
+		  团购服务退单处理 -- 1单。
+01月09日：小程序原生排行榜页面。
+		  预售商城佣金记录调查。
+01月10日：碎片合成修改为小程序原生页面。
+		  跟小程序前端沟通页面样式bug。
+		  我的能力值页面分享功能。
+		  小程序发布，开发二维码生成功能。
+----------------------------------------------------------------------------------------
+01月13日：小程序无图片问题处理。
+		  小程序发布失败处理（3次）。
+		  修改排行榜未授权不参与排名。
+		  修改喊话H5用户登录更新用户昵称头像方法。
+		  临时处理ib的bug店铺分类问题。
+01月14日：手机上语音不播放问题。
+		  小程序发布。
+01月15日：小程序二维码识别修改切换游戏缓存问题。
+		  根据模版建立喊话游戏时生成小程序二维码。
+		  小程序返回首页bug修改。
+01月16日：排行榜时间显示修改。
+		  赠送碎片bug修改。
+		  奖品bug。
+01月17日：修改小程序账号可配置。
+----------------------------------------------------------------------------------------
+01月19日：所有游戏增加unionid。
+		  测试环境最新代码部署。
+		  正式环境部署配置小程序页面，菜单。
+		  发布小程序。
+		  门店品类后台功能20%。
+01月20日：门店品类后台功能80%。
+01月21日：门店品类后台功能。
+01月22日：门店品类后台功能修改。
+01月23日：分类合并，
+		  销量统计，
+		  喊话小程序助力文字修改。
+----------------------------------------------------------------------------------------
+01月31日：
+02月01日：
+02月03日：
+02月04日：
+02月05日：
+02月06日：
+02月07日：
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+待完成功能：		  
+	订单支付分享红包接口。
+	删掉zffs-v2.html  group-zffs.html  相关内容。
+	充值+预售修改图片显示bug修改。
+
+展会bug记录：
+	1：支付码扫一次绑定。
+	2：我的订单跳转我的优惠券。
+----------------------------------------------------------------------------------------
+
+//小程序喊话新增字段
+//已经执行：
+alter table ib_staff add auth_type varchar(10) COMMENT '店长-shopowner，员工-staff' default 'staff';
+//待执行sql：
+alter table ib_staff add station_ids longtext COMMENT '多门店配置';
+UPDATE ib_staff SET station_ids = STOREID;
+
+ib-redis查询：
+http://localhost:8070/iBusiness/WxCart/getRedisInfo.do?key=1&type=
+
+喊话登陆：
+http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=7d432aedc356420e8031cd4ec088a77b&token=e28899de-8c46-4ea4-8ed9-7e7922ee255e
+
+
+//服务团报登录
+
+http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-7a1c78b9c86f&token=1
+
+http://www.yunhud.com/ymgame/register/login.html?gameid=6bfa69fd-c870-4bb2-9d9d-bbb49285900d&token=b7eae572-4994-4417-aae7-a2b71ffc225d-7970
+
+http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
+
+
+
+正式：
+http://www.umahui.com/iBusiness/youmahui/login.html?token=2e36f3fc-cf6d-438a-960b-deb127318fbe
+91批销：
+http://www.dxehdt.com/iBusiness/youmahui/login.html?token=37510030-2fa5-4bfe-82ed-aca03d05031e
+本地：
+http://localhost:8070/iBusiness/youmahui/login.html?token=liujian
+测试：
+https://www.youmahui.net/iBusiness/xcxumahui/login.html?token=853ca804-86c4-48a8-9f96-b36b9ced139e
+
+
+支付API返回的数据如下：
+<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]>
+</return_msg><appid><![CDATA[wx6a60f8cb526823b2]]></appid><mch_id><![CDATA[1491782762]]>
+</mch_id><nonce_str><![CDATA[zlfW9iHrR2T6ZaAk]]></nonce_str><sign><![CDATA[4D90B0433FC53C51D9A5B5E6528C8496]]>
+</sign><result_code><![CDATA[FAIL]]></result_code><err_code><![CDATA[ORDERPAID]]></err_code><err_code_des>
+<![CDATA[该订单已支付]]></err_code_des></xml>
