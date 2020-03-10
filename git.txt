@@ -4,7 +4,13 @@ git config user.email 'lwl.286131719@163.com'
 
 
 git@39.105.229.28:root/youma-ui.git
-
+ 
 
 //配置这个 不用再次输入账号密码
 git config credential.helper store
+
+小程序git地址： 
+	git@39.105.229.28:youmakeji/wechatapp.git
+	
+//删除无用jar包
+	for /r %i in (*.lastUpdated) do del %i
