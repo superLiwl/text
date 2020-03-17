@@ -2,15 +2,32 @@ git config user.name "superLiwl"
 git config user.email 'lwl.286131719@163.com'
 
 
-
 git@39.105.229.28:root/youma-ui.git
- 
 
-//配置这个 不用再次输入账号密码
-git config credential.helper store
+git@39.105.229.28:root/youma.git
+
+git@39.105.229.28:root/pigx-upms.git
+
+git@39.105.229.28:root/pigx-visual.git
+
+git@39.105.229.28:root/ymgame-service.git
+
+git@39.105.229.28:root/ymh-service.git
+
+git@39.105.229.28:root/pigx-common.git
+ 
+git@39.105.229.28:root/pigx-gateway.git
+
+git@39.105.229.28:root/pigx-auth.git
+
+git@39.105.229.28:root/pigx-register.git
 
 小程序git地址： 
 	git@39.105.229.28:youmakeji/wechatapp.git
+	
+	
+//配置这个 不用再次输入账号密码
+	git config credential.helper store
 	
 //删除无用jar包
 	for /r %i in (*.lastUpdated) do del %i

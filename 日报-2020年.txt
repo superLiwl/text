@@ -83,11 +83,27 @@
 		  小程序登录即可对接。
 		  小程序获取支付信息。
 03月10日：saas商城支付修改为小程序支付页面跳转，回调接口。
-03月11日：
-03月12日：
-03月13日：小程序员工助手孕产服务查看孕产服务订单页面。
+03月11日：小程序聊天接口对接，小程序直播列表修改为真实直播。
+03月12日：商品购买流程,小程序对接优惠券接口。
+03月13日：小程序商品接口对接。直播列表接口修改。
+		  小程序认证。
+		  直播分享功能。
+		  小程序支付申请接入。
+----------------------------------------------------------------------------------------
+03月15日：生成店铺小程序码。
+		  直播接口对接并修改。
+		  代码部署正式环境。
+03月16日：直播间聊天功能优化，修改。
+		  同步前端样式bug。
+		  小程序支付审核。
+		  正在购买接口对接。
+03月17日：
+03月18日：
+03月19日：
+03月20日：小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
 ----------------------------------------------------------------------------------------
+
 部署注意：同步saas员工信息接口地址需要修改。
 https://4ysg.w.eolinker.com/#/share/index?shareCode=2gZLfc
 
@@ -122,7 +138,6 @@ http://localhost:8070/iBusiness/WxCart/getRedisInfo.do?key=yxj_154126&type=
 喊话登陆：	
 http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=7d432aedc356420e8031cd4ec088a77b&token=e28899de-8c46-4ea4-8ed9-7e7922ee255e
 
- 
 //服务团报登录
 
 http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-7a1c78b9c86f&token=1
@@ -130,8 +145,6 @@ http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-
 http://www.yunhud.com/ymgame/register/login.html?gameid=6bfa69fd-c870-4bb2-9d9d-bbb49285900d&token=b7eae572-4994-4417-aae7-a2b71ffc225d-7970
 
 http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
-
-
 
 正式：
 http://www.umahui.com/iBusiness/youmahui/login.html?token=2e36f3fc-cf6d-438a-960b-deb127318fbe
