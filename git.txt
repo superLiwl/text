@@ -22,7 +22,10 @@ git@39.105.229.28:root/pigx-auth.git
 
 git@39.105.229.28:root/pigx-register.git
 
-小程序git地址： 
+优妈慧IB-git地址：
+	git@39.105.229.28:youmakeji/ibusiness.git
+
+小程序git地址：
 	git@39.105.229.28:youmakeji/wechatapp.git
 	
 	
