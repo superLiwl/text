@@ -1,0 +1,43 @@
+//redis目录下 运行 cmd 输入下边命令
+redis-server.exe  redis.windows.conf
+
+//web前段启动
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install
+npm run dev
+
+
+linux启动命令：
+	nohup java org.springframework.boot.loader.JarLauncher mp &
+	nohup java org.springframework.boot.loader.JarLauncher ymgame &
+	nohup java org.springframework.boot.loader.JarLauncher ymh &
+	nohup java org.springframework.boot.loader.JarLauncher center &
+	tail -f nohup.out
+	ps -ef |grep java
+windows启动命令：
+	java org.springframework.boot.loader.JarLauncher mp 
+	java org.springframework.boot.loader.JarLauncher ymgame 
+	java org.springframework.boot.loader.JarLauncher ymh
+
+git
+$ ssh-keygen -t rsa -C “lwl.286131719@163.com”
+
+:wq 保存文件并退出vi 编辑
+:wq! 强制保存文件并退出vi 编辑
+q: 不保存文件并退出vi 编辑
+
+//删除无效的包
+for /r %i in (*.lastUpdated) do del %i
+
+
+nginx启动命令:
+
+start nginx
+
+nginx.exe -s stop
+
+nginx.exe -s reload
+
+
+
+D:\Program Files\JetBrains\IntelliJ IDEA\bin\jetbrains-agent.jar
