@@ -1,0 +1,15 @@
+选城市 
+
+建立店铺
+
+一个代理商-一个城市  -一个店
+
+
+98--sql增加：
+
+alter table IB_COMPANY add province_id varchar(20) COMMENT '省';
+
+alter table IB_COMPANY add city_id varchar(20) COMMENT '市';
+
+alter table shop_area add is_agent varchar(20) COMMENT '0-未代理，1-已代理' DEFAULT '0';
+
