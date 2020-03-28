@@ -10,14 +10,3 @@ alter table ib_partnermap add user_name varchar(20) COMMENT '登录名';
 
 alter table ib_partnermap add user_password varchar(20) COMMENT '登录密码';
 
-
-服务器：----------------------------------------------------------------------------------------
-阿里云
-外网ip: 123.56.205.216
-阿里云账号：xuexiongpijiu
-阿里云密码：xuexiongpbcom135789
-
-雪熊啤酒阿里云远程登陆
-远程链接ip: 123.56.205.216
-用户名：Administrator
-密码：xuexiongpbcom135789~
