@@ -10,3 +10,6 @@ alter table ib_partnermap add user_name varchar(20) COMMENT '登录名';
 
 alter table ib_partnermap add user_password varchar(20) COMMENT '登录密码';
 
+alter table ib_redsinguselog add partnermap_id varchar(64) COMMENT '合作商户主键id';
+
+
