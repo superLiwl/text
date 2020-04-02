@@ -124,15 +124,24 @@
 03月27日：完善授权登陆功能，解决偶尔获取不到登录信息问题。
 		  千城小程序开通支付功能。
 ----------------------------------------------------------------------------------------
-03月30日：
-03月31日：
-04月01日：
-04月02日：
-04月03日：
+03月30日：商品详情页，支付页，支付成功页，html跳转页，移动到优互播小程序，优互播调通支付功能。
+		  找前端解决授权样式问题。
+03月31日：购物车授权功能-代码完成，样式等待前端。
+		  直播详情页面定时刷新推送图片。
+04月01日：雪熊bug修改(7个)。
+		  优互播审核进程关注。
+04月02日：优互播发布商品购买功能。
+		  直播页面二维码商城。
+		  ib确认框bug修改。
+		  优惠券扫码核销功能修改。
+		  优互播聊天bug修改，订单租户bug修改。
+04月03日：聊天授权功能。
 ----------------------------------------------------------------------------------------
 		  小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
-		  
+错误订单下修改：624306   958172   771821		  
+		  buyNow
+		  addCart
 		  
 3002804460
 部署注意：同步saas员工信息接口地址需要修改。
@@ -178,6 +187,9 @@ http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-
 http://www.yunhud.com/ymgame/register/login.html?gameid=6bfa69fd-c870-4bb2-9d9d-bbb49285900d&token=b7eae572-4994-4417-aae7-a2b71ffc225d-7970
 
 http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
+
+http://localhost:8066/iBusiness/youmahui/login.html?token=qiseliu
+http://localhost:8066/iBusiness/youmahui/near-shop.html
 
 正式：
 http://www.umahui.com/iBusiness/youmahui/login.html?token=2e36f3fc-cf6d-438a-960b-deb127318fbe

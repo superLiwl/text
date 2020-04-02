@@ -12,4 +12,15 @@ alter table ib_partnermap add user_password varchar(20) COMMENT '登录密码';
 
 alter table ib_redsinguselog add partnermap_id varchar(64) COMMENT '合作商户主键id';
 
+alter table ib_redenvelope add used_count int(10) COMMENT '已用数量';
+
+alter table ib_redenvelope add have_count int(10) COMMENT '拥有数量';
+
+alter table ib_redsinguselog add hx_count int(10) COMMENT '核销数量';
+
+alter table ib_redsinguselog add consume_user_id bigint(20) COMMENT '消费人';
+
+
+
+
 
