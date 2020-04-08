@@ -141,6 +141,18 @@
 		  配合测试获取小程序链接地址，压测。
 		  ib过期提醒文字描述修改。
 ----------------------------------------------------------------------------------------
+04月06日：聊天授权样式与功能修改完成。
+		  配合香香压测。
+		  左上角热度刷新功能。
+04月07日：商品详情购物车权限功能合前端样式。
+		  ib优妈慧操作时间bug修改。
+		  商品详情修改返回直播功能。
+		  小程序发布。
+04月08日：支付接口增加直播间id参数。
+		  ib优妈慧单品宝bug。
+04月09日：
+04月10日：		  
+----------------------------------------------------------------------------------------
 		  小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
 		  
@@ -167,6 +179,9 @@ https://www.youmahui.net/iBusiness/youmahui/staffAssistantApp/staff_login.html
 http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
 
 //小程序喊话新增字段
+
+alter table shop_goodscart add live_id varchar(64) COMMENT '直播id';
+
 //已经执行：
 alter table ib_staff add auth_type varchar(10) COMMENT '店长-shopowner，员工-staff' default 'staff';
 //待执行sql：
