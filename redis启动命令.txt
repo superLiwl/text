@@ -43,5 +43,5 @@ nginx.exe -s reload
 D:\Program Files\JetBrains\IntelliJ IDEA\bin\jetbrains-agent.jar
 
 
-redis.host=r-2zeesn6so5c54qbmpp.redis.rds.aliyuncs.com
-redis.password=YouMa521
+r-2zeesn6so5c54qbmpp.redis.rds.aliyuncs.com
+YouMa521
