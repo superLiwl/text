@@ -150,12 +150,29 @@
 		  小程序发布。
 04月08日：支付接口增加直播间id参数。
 		  ib优妈慧单品宝bug。
-04月09日：
-04月10日：		  
+		  ib优妈慧商品详情展示重复bug解决。
+04月09日：直播详情增加我的入口。
+04月10日：pk接口调试。
+	      聊天sdk调查。
+		  优接龙、优团报小程序认证。
 ----------------------------------------------------------------------------------------
+04月13日：生成小程序二维码修改为uuid。
+	      小程序发布UGC问题解决，增加微信文本校验接口。
+		  修改聊天记录自动下拉。
+		  修改商品问题导致卡在详情页不动bug。
+		  发布小程序。
+		  小程序订单增加小程序类型区分。
+04月14日：微信小程序直播流模块调查。
+		  小程序bug修改。
+		  分享。
+04月15日：
+04月16日：
+04月17日：
+----------------------------------------------------------------------------------------
+
 		  小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
-		  
+		 
 部署注意：同步saas员工信息接口地址需要修改。
 https://4ysg.w.eolinker.com/#/share/index?shareCode=2gZLfc
 
@@ -215,10 +232,3 @@ http://localhost:8070/iBusiness/youmahui/login.html?token=liujian
 测试：
 https://www.youmahui.net/iBusiness/xcxumahui/login.html?token=853ca804-86c4-48a8-9f96-b36b9ced139e
 
-
-支付API返回的数据如下：
-<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]>
-</return_msg><appid><![CDATA[wx6a60f8cb526823b2]]></appid><mch_id><![CDATA[1491782762]]>
-</mch_id><nonce_str><![CDATA[zlfW9iHrR2T6ZaAk]]></nonce_str><sign><![CDATA[4D90B0433FC53C51D9A5B5E6528C8496]]>
-</sign><result_code><![CDATA[FAIL]]></result_code><err_code><![CDATA[ORDERPAID]]></err_code><err_code_des>
-<![CDATA[该订单已支付]]></err_code_des></xml>
