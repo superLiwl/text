@@ -21,6 +21,9 @@ alter table ib_redsinguselog add hx_count int(10) COMMENT '核销数量';
 alter table ib_redsinguselog add consume_user_id bigint(20) COMMENT '消费人';
 
 
+alter table ib_partnermap modify column CITYID varchar(20);
+alter table ib_partnermap add province_id varchar(20) COMMENT '省';
+UPDATE `ib_partnermap` m SET m.province_id = (SELECT a.parent_id FROM `shop_area` a WHERE a.id = m.CITYID);
 
 
 
