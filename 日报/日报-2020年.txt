@@ -188,14 +188,21 @@
 		  增加倒计时功能。
 		  解决分享海报的页面显示主播昵称。
 		  直播详情页增加返回列表功能。
-04月22日：直播排序。
-		  我的页面修改。
-04月23日：
-04月24日：
+04月22日：我的页面修改为原生小程序页面。
+		  H5订单列表修改。
+		  H5订单详情修改。
+		  购物车，我的样式修改。
+04月23日：直播排序。
+		  去掉聊天文字的背景色。
+		  六一活动功能政管理。
+04月24日：聊天文字背景色需改。
+	      聊天心跳增加。
+		  商品详情页文字输入bug。
+		  聊天名称为空bug解决。
 ----------------------------------------------------------------------------------------
 		  小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
-		 
+		 '+detailHtml+'?id='+pd.of_id+'&pdType'+pdType+'
 部署注意：同步saas员工信息接口地址需要修改。
 https://4ysg.w.eolinker.com/#/share/index?shareCode=2gZLfc
 
@@ -217,6 +224,7 @@ https://www.yunhud.com/ymh/yhdapplet/login.html?storeId=1&token=1:9a72487e-71a8-
 https://www.youmahui.net/iBusiness/youmahui/staffAssistantApp/staff_login.html
 
 http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
+
 
 //小程序喊话新增字段
 
