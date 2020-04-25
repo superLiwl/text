@@ -26,4 +26,10 @@ alter table ib_partnermap add province_id varchar(20) COMMENT '省';
 UPDATE `ib_partnermap` m SET m.province_id = (SELECT a.parent_id FROM `shop_area` a WHERE a.id = m.CITYID);
 
 
+//增加商品普通会员价，非普通会员价
+alter table shop_goods add column store_price_special decimal(12,2) COMMENT '非普通会员价';
+update shop_goods set store_price_special = store_price;
+
+CASE (SELECT ispartner FROM shop_user uuu WHERE uuu.id = 1) WHEN 0 THEN g.store_price else g.store_price_special end store_price  
+
 
