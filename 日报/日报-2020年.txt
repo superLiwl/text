@@ -228,14 +228,41 @@
 		  跳转优妈慧领取优惠券，商品支付调试完成。
 		  直播列表滑动bug。
 		  bug0606。
-05月08日：直播连麦功能页面80%。千城接口--0%
+05月08日：直播连麦功能页面70%。
 		  跳转到优妈慧支付成功页面增加参数传递。
 ----------------------------------------------------------------------------------------
-05月11日：
-05月12日：
-05月13日：
-05月14日：
-05月15日：
+05月11日：直播连麦功能页面100%。
+		  直播商品库存提示bug。
+05月12日：对接pk接口。
+		  喊话碎片bug修改。
+		  喊话多次加载助力好友信息bug修改。
+05月13日：增加开播暂离的显示。
+	      修改图片尺寸大小提示。
+		  喊话活动碎片样式修改。
+		  喊话活动修改为先加载碎片信息。
+		  喊话页面中部图片样式修改。
+05月14日：商品详情页推荐商品bug修改。
+		  直播详情页获取用户信息优化，授权优化。
+		  商品详情页登陆优化。
+		  登录增加后台缓存使用。
+05月15日：ib优妈慧充值页面样式修改。
+		  直播返回详情页一直加载bug修改。
+		  直播列表图片大小不一致bug修改。
+		  解决购物车商品跳转saas商城bug。
+----------------------------------------------------------------------------------------
+05月18日：0585,0604,0647。
+		  pk黑屏优化 50%。
+05月19日：pk黑屏优化 100%。
+		  0638
+		  直播配置增加视频字段。
+05月20日：对接钱包组合支付接口-调通。
+		  支持多主播同时直播压力。
+05月21日：小程序开播调研。
+		  直播获取右侧图片接口修改。
+		  商品来回跳转卡死问题解决。
+05月22日：直播弹出删除问题调查。
+		  喊话授权调查。
+		  直播增加视频播放功能。
 ----------------------------------------------------------------------------------------
 
 		  小程序员工助手孕产服务查看孕产服务订单页面。
@@ -248,7 +275,7 @@ http://localhost:8070/iBusiness/xcxscan/getPayment.do?outTradeNo=181029103244114
 
 https://www.youmahui.net/ymh/yhdapplet/login.html?storeId=1&token=1:3809902c-8f94-4aa0-8a00-26762ddc61a7-5008
 
-https://www.yunhud.com/ymh/yhdapplet/login.html?storeId=1&token=1:9a72487e-71a8-44bd-ba00-ba7a6a092a7c-8297
+https://www.yunhud.com/ymh/yhdapplet/login.html?storeId=1&token=1:4beb21e2-9bfd-413c-b548-0aa2ad806d13-9955
 
 待完成功能：		  
 	订单支付分享红包接口。
@@ -266,7 +293,8 @@ http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
 
 //小程序喊话新增字段
 
-alter table shop_goodscart add live_id varchar(64) COMMENT '直播id';
+alter table live_home_config add video_url varchar(255) COMMENT '视频地址';
+alter table live_home_config add video_type varchar(10) COMMENT '类型：upload-上传地址 link-链接地址';
 
 //已经执行：
 alter table ib_staff add auth_type varchar(10) COMMENT '店长-shopowner，员工-staff' default 'staff';
@@ -279,7 +307,7 @@ ib-redis查询：
 http://localhost:8070/iBusiness/WxCart/getRedisInfo.do?key=yxj_154126&type=
 
 喊话登陆：	
-http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=7d432aedc356420e8031cd4ec088a77b&token=e28899de-8c46-4ea4-8ed9-7e7922ee255e
+http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=ca2c8a232be64c17b2788cabb513a7fe&token=e50a8564-9fb8-442f-acd1-6a5614329535-2197
 
 //服务团报登录
 
@@ -293,11 +321,16 @@ http://localhost:8066/iBusiness/youmahui/login.html?token=qiseliu
 http://localhost:8066/iBusiness/youmahui/near-shop.html
 
 正式：
-http://www.umahui.com/iBusiness/youmahui/login.html?token=2e36f3fc-cf6d-438a-960b-deb127318fbe
+http://www.umahui.com/iBusiness/youmahui/login.html?token=07b64b76-e9de-48b4-a17d-f1e6aae605b8
+
+http://www.umahui.com/iBusiness/youmahui/salemarket.html?id=270cb683-6a49-44f4-b697-6569813a9e58
+
 91批销：
 http://www.dxehdt.com/iBusiness/youmahui/login.html?token=37510030-2fa5-4bfe-82ed-aca03d05031e
 本地：
 http://localhost:8070/iBusiness/youmahui/login.html?token=liujian
+
+http://localhost:8070/iBusiness/youmahui/salemarket.html?id=8a6a22f1-b7dd-4aed-9907-cb827c1f407d
 测试：
 https://www.youmahui.net/iBusiness/xcxumahui/login.html?token=853ca804-86c4-48a8-9f96-b36b9ced139e
 
