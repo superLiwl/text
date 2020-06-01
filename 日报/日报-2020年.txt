@@ -262,8 +262,20 @@
 		  商品来回跳转卡死问题解决。
 05月22日：直播弹出删除问题调查。
 		  喊话授权调查。
-		  直播增加视频播放功能。
 ----------------------------------------------------------------------------------------
+05月25日：直播增加视频播放功能。
+	      服务团报支持。
+05月26日：小程序压测。
+		  修改连接不稳定bug。
+05月27日：websocket压测。
+05月28日：留言刷新优化。
+		  pk黑屏。
+		  修改商品排序，增加查询单品宝价格。
+		  压测socket。
+05月29日：小程序增加socket连接数控制开关。
+----------------------------------------------------------------------------------------
+
+
 
 		  小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
@@ -293,7 +305,8 @@ http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
 
 //小程序喊话新增字段
 
-alter table live_home_config add video_url varchar(255) COMMENT '视频地址';
+alter table ib_registerform add address varchar(255) COMMENT '地址';
+
 alter table live_home_config add video_type varchar(10) COMMENT '类型：upload-上传地址 link-链接地址';
 
 //已经执行：
@@ -313,7 +326,7 @@ http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=ca2c8a232be64c17b2788
 
 http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-7a1c78b9c86f&token=1
 
-http://www.yunhud.com/ymgame/register/login.html?gameid=6bfa69fd-c870-4bb2-9d9d-bbb49285900d&token=b7eae572-4994-4417-aae7-a2b71ffc225d-7970
+http://www.yunhud.com/ymgame/register/login.html?gameid=33402bf5-59a9-4220-9099-a16fd6111aa5&token=3fe78234-7bf3-4365-b3b4-d1dd98e49f48-9512
 
 http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
 
