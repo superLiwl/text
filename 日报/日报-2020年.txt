@@ -275,13 +275,51 @@
 05月29日：小程序增加socket连接数控制开关。
 05月30-31日：配合乐购节相关内容，刷新在线人数定时任务开发，后台压力监测。
 ----------------------------------------------------------------------------------------
-06月01日：配合乐购节相关内容，直播助力玩法。
-06月02日：
-06月03日：
-06月04日：
-06月05日：
+06月01日：配合乐购节相关内容，带宽升级，临时处理查询用户信息，优惠券过期延时。
+06月02日：直播助力后台，表开发。
+		  查询列表数据接口，保存助力数据接口。
+06月03日：直播页面增加助力分享参数。
+06月04日：增加授权遮罩,助力按钮，推送商品合并前端样式。
+06月05日：对接前端样式接口。推送商品、直播间功能。
 ----------------------------------------------------------------------------------------
-
+06月08日：助力页面,同步前端样式、接口对接。
+06月09日：商品，优惠券同步前端样式，接口对接，样式bug修改，增加助力开关。
+06月10日：直播排行榜样式bug修改。
+	      分享增加视频播放样式。
+		  修改排行榜排序的bug。
+		  修改规则遮罩的bug。
+06月11日：优惠券样式bug修改。
+		  绑定手机号。
+		  排行榜透明度修改。
+06月12日：排行榜我的头像bug修改。
+		  优惠券样式不兼容问题。
+----------------------------------------------------------------------------------------
+06月15日：开播我的页面，关播接口。
+		  展会宝后台配置优惠券bug修改。
+		  展会宝选择优惠券bug修改。
+06月16日：创建直播间生成不同规格的图片80%。
+06月17日：展示海报图片尺寸修改。
+		  绑定手机号顺序修改。
+		  服务团报临时处理。
+		  忧互动商城首页分享功能。
+06月18日：绑定手机号优化,登录优化。小程序发版。
+06月19日：海报生成图片优化。
+		  增加底部导航条。
+		  我的页面增加登录。
+		  展会宝销售订单不显示最后一条的bug.
+----------------------------------------------------------------------------------------
+06月20日：展会现场。
+		  拒绝授权修改为跳转到列表页面。
+		  商品详情页登录修改。
+06月22日：强制授权优化。
+		  增加店铺直播二维码生成字段。
+		  前端样式问题沟通解决。
+06月23日：开播商品页面。
+		  刷新所有店铺的商城小程序图片，直播列表图片。
+06月24日：卡券列表
+06月25日：扫码核销
+06月26日：		  
+----------------------------------------------------------------------------------------
 
 		  小程序员工助手孕产服务查看孕产服务订单页面。
 		  小程序员工助手孕产服务支付功能。
@@ -293,7 +331,7 @@ http://localhost:8070/iBusiness/xcxscan/getPayment.do?outTradeNo=181029103244114
 
 https://www.youmahui.net/ymh/yhdapplet/login.html?storeId=1&token=1:3809902c-8f94-4aa0-8a00-26762ddc61a7-5008
 
-https://www.yunhud.com/ymh/yhdapplet/login.html?storeId=1&token=1:4beb21e2-9bfd-413c-b548-0aa2ad806d13-9955
+https://www.yunhud.com/ymh/yhdapplet/login.html?storeId=60&token=48:f43376bc-a580-4d5c-bd1c-612e3fcfe74f-1544
 
 待完成功能：		  
 	订单支付分享红包接口。
@@ -311,9 +349,20 @@ http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
 
 //小程序喊话新增字段
 
-alter table ib_registerform add address varchar(255) COMMENT '地址';
 
-alter table live_home_config add video_type varchar(10) COMMENT '类型：upload-上传地址 link-链接地址';
+
+alter table shop_store add live_img varchar(120) COMMENT '小程序直播列表图片地址';
+
+//live_goods_list
+alter table live_goods_list add is_quick varchar(2) DEFAULT '0' COMMENT '是否快捷入口：0否，1是。只能有一个商品为快捷入口';
+alter table live_goods_list add quick_push_time int(6) COMMENT '快捷推送时长，单位秒';
+alter table live_goods_list add auto_push varchar(2) DEFAULT '0' COMMENT '是否自动推送：0-不推送，1-自动推送';
+alter table live_goods_list add auto_push_time int(6) COMMENT '自动推送时长，单位秒';
+//live_home_config
+alter table live_home_config add quick_live_id varchar(20) COMMENT '快捷入口直播间id';
+alter table live_home_config add quick_push_time int(6) COMMENT '快捷推送时长，单位秒';
+
+
 
 //已经执行：
 alter table ib_staff add auth_type varchar(10) COMMENT '店长-shopowner，员工-staff' default 'staff';
@@ -332,7 +381,7 @@ http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=ca2c8a232be64c17b2788
 
 http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-7a1c78b9c86f&token=1
 
-http://www.yunhud.com/ymgame/register/login.html?gameid=33402bf5-59a9-4220-9099-a16fd6111aa5&token=3fe78234-7bf3-4365-b3b4-d1dd98e49f48-9512
+http://www.yunhud.com/ymgame/register/login.html?gameid=636c54b3-e74b-45a1-a738-c14cca367631&token=8d2e5cae-b452-477d-8435-4d81c9394703-3239
 
 http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
 

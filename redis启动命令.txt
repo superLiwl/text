@@ -3,6 +3,7 @@ redis-server.exe  redis.windows.conf
 
 //web前段启动
 npm install -g cnpm --registry=https://registry.npm.taobao.org
+
 cnpm install
 npm run dev
 
