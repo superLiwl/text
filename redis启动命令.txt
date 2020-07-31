@@ -40,9 +40,8 @@ nginx.exe -s stop
 nginx.exe -s reload
 
 
-
 D:\Program Files\JetBrains\IntelliJ IDEA\bin\jetbrains-agent.jar
-
 
 r-2zeesn6so5c54qbmpp.redis.rds.aliyuncs.com
 YouMa521
+
