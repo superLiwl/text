@@ -1,0 +1,28 @@
+DELETE FROM js_sys_post;
+DELETE FROM js_sys_office;
+DELETE FROM js_sys_company;
+DELETE FROM js_sys_employee;
+DELETE FROM js_sys_employee_post;
+DELETE FROM js_sys_role WHERE role_code NOT IN ('corpAdmin','default');
+DELETE FROM js_sys_role_data_scope;
+DELETE FROM js_sys_user WHERE user_code NOT IN ('system','admin');
+DELETE FROM js_sys_user_data_scope;
+DELETE FROM js_sys_user_role;
+DELETE FROM js_sys_log;
+
+
+
+<% if(hasPermi('vote:voteQuestionnaire:edit')){ %>
+	<a href="#" class="btn btn-default" id="btnPublish" onclick="getCheckBoxValue()" title="${text('发布')}"><i class="fa fa-filter"></i> ${text('发布')}</a>
+	<a href="#" class="btn btn-default" id="btnResult" title="${text('查看结果')}"><i class="fa fa-filter"></i> ${text('查看结果')}</a>
+	<a href="#" class="btn btn-default" id="btnStop" title="${text('终止投票')}"><i class="fa fa-filter"></i> ${text('终止投票')}</a>
+	<a href="#" class="btn btn-default" id="btnSee" title="${text('预览')}"><i class="fa fa-filter"></i> ${text('预览')}</a>
+<% } %>
+
+function getCheckBoxValue() {
+		var vals = [];
+		$.each($('input:checkbox:checked'),function(){
+			vals.push($(this).attr('id').replace("jqg_dataGrid_",""));
+		});
+		console.log(vals);
+	}
