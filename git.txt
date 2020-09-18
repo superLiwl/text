@@ -35,5 +35,3 @@ git@39.105.229.28:root/pigx-register.git
 //删除无用jar包
 	for /r %i in (*.lastUpdated) do del %i
 	
-	
-	牛奶，鸡蛋，维生素D，豆制品。

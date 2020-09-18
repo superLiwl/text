@@ -33,5 +33,3 @@ update shop_goods set store_price_special = store_price;
 CASE (SELECT ispartner FROM shop_user uuu WHERE uuu.id = 1) WHEN 0 THEN g.store_price else g.store_price_special end store_price  
 
 https://www.yunhud.com/ymh/appSpesell/getOfferFlag.do?storeId=60&token=48:51be33a7-980d-4718-a756-7820d72be0f5-6547&lgid=126
-
-
