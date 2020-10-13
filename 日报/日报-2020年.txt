@@ -505,29 +505,60 @@
 09月17日：商家来单推送：商户有顾客购买商品下单，短信推送商户管理员。
 		  申请优互播签名，申请消息模版。修改签名代码。
 		  商户端跳转到开播端storeid为空的bug修改。
-09月18日：生成发放卡券的小程序二维码。 
-		  后台配置小程序发发放卡券。
-		  
-		  
-		 类目申请失败-调查永久订阅消息类目申请。
-		 热播列表--增加到滑动数据列表。
+09月18日：后台配置小程序发发放卡券70%。
+----------------------------------------------------------------------------------------
+09月21日：后台配置小程序发发放卡券100%。
+		  对接小程序发卡券页面。
+		  生成发放卡券的小程序二维码。 
+09月22日：第三方小程序发卡券。
+		  短信通知商户bug修改。
+09月23日：配置优惠券增加查询子租户优惠券。
+		  已抢光bug解决。
+		  增加已领数量的显示。
+		  增加根据店铺查询直播间列表。
+09月24日：基础卡券配置增加次卡配置。
+		  卡券营销配置增加次卡配置。
+		  办理会员回调增加次卡发送。
+		  小程序发放卡券增加次卡发券。
+		  小程序修改次卡显示。
+09月25日：扫码核销次卡。
+		  H5商城修改次卡显示，增加弹出二维码核销。
+		  小程序我的优惠券修改次卡显示，增加弹出二维码核销。	
+		  核销记录增加记录次卡的数量。
+----------------------------------------------------------------------------------------
+09月27日：购买商品发送次卡修改，
+		  充值发送次卡修改，
+		  用户注册发送次卡修改。
+		  小程序卡券发放展示修改60%。
+09月28日：小程序卡券发放展示修改100%。
+		  小程序卡券发放样式同步到第三方小程序。
+		  小程序发版。
+		  findbugs扫一下代码，看看效果。
+09月29日：会员发放优惠券增加次卡发放。
+		  第三方小程序优惠券显示修改。
+09月30日：小程序订单支付邮费bug修改。
+		  第三方小程序热播bug修改。
+----------------------------------------------------------------------------------------
+10月09日：优惠券核销记录修改。
+		  saas限购修改---后台配置-sku级。
+		  H5端--购物车限购-sku级。
+10月10日：H5端--立即购买限购-sku级。
+		  优互播--立即购买增加限购。
+		  优互播--购物车购买增加限购-80%。
+----------------------------------------------------------------------------------------
+10月12日：优互播--购物车购买增加限购-100%。
+10月13日：0950，0949、0955、0946、0933、0971、0974、0972、0969、0970、0968、0966。
+10月14日：0975
+10月15日：
+10月16日：
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
-
-//作弊清楚sql----------------------------------------------------------------------------start------------
-SELECT s.id,u.nickName,u.headpicurl,u.mobile,s.create_time FROM `ib_shareactivity_scan` s LEFT JOIN shop_user u ON s.mid = u.id 
-WHERE s.share_mid = 203034 AND mobile is not NULL ORDER BY s.create_time ASC;
-
-DELETE FROM ib_shareactivity_scan WHERE share_mid = 203034 AND id != '6bf4fd6d-41a2-4327-a8e8-fc3a94131435'
-//作弊清楚sql-----------------------------------------------------------------------------end-----------
-
-
-SELECT count(id),tenant_id FROM `shop_store` GROUP BY tenant_id;
-
-多次授权调查。
-调研一次订阅，多次订阅小程序授权。
-卡券列表接口（暂无页面）。
+----------------------------------------------------------------------------------------
+增加发送短信的开关。
+类目申请失败-调查永久订阅消息类目申请。
+热播列表--增加到滑动数据列表。
+----------------------------------------------------------------------------------------
 
 
 		  小程序员工助手孕产服务查看孕产服务订单页面。
@@ -536,78 +567,10 @@ SELECT count(id),tenant_id FROM `shop_store` GROUP BY tenant_id;
 部署注意：同步saas员工信息接口地址需要修改。
 https://4ysg.w.eolinker.com/#/share/index?shareCode=2gZLfc
 
-http://localhost:8070/iBusiness/xcxscan/getPayment.do?outTradeNo=1810291032441149879&userId=32862&payPrice=0.01
-
-https://www.youmahui.net/ymh/yhdapplet/login.html?storeId=1&token=1:3809902c-8f94-4aa0-8a00-26762ddc61a7-5008
-
-https://www.yunhud.com/ymh/yhdapplet/login.html?storeId=60&token=48:f43376bc-a580-4d5c-bd1c-612e3fcfe74f-1544
-
-待完成功能：		  
-	订单支付分享红包接口。
-	删掉zffs-v2.html  group-zffs.html  相关内容。
-	充值+预售修改图片显示bug修改。
-
-展会bug记录：
-	1：支付码扫一次绑定。
-	2：我的订单跳转我的优惠券。
-----------------------------------------------------------------------------------------
-https://www.youmahui.net/iBusiness/youmahui/staffAssistantApp/staff_login.html
-
-http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
-
-
-//小程序喊话新增字段
-
-alter table shop_store add delivery varchar(1) COMMENT '0：用户自选 1:只能自提  2：只能邮寄';
-
-alter table shop_user add merchant_open_id varchar(64) COMMENT '商户版小程序openid';
-
-//live_goods_list
-alter table live_goods_list add is_quick varchar(2) DEFAULT '0' COMMENT '是否快捷入口：0否，1是。只能有一个商品为快捷入口';
-alter table live_goods_list add quick_push_time int(6) COMMENT '快捷推送时长，单位秒';
-alter table live_goods_list add auto_push varchar(2) DEFAULT '0' COMMENT '是否自动推送：0-不推送，1-自动推送';
-alter table live_goods_list add auto_push_time int(6) COMMENT '自动推送时长，单位秒';
-//live_home_config
-alter table live_home_config add quick_live_id varchar(20) COMMENT '快捷入口直播间id';
-alter table live_home_config add quick_push_time int(6) COMMENT '快捷推送时长，单位秒';
-
-
-
-//已经执行：
-alter table ib_staff add auth_type varchar(10) COMMENT '店长-shopowner，员工-staff' default 'staff';
 //待执行sql：
 alter table ib_staff add station_ids longtext COMMENT '多门店配置';
 UPDATE ib_staff SET station_ids = STOREID;
 alter table ib_staff add staff_no varchar(20) COMMENT '员工编号（对应百年）';
 
-ib-redis查询：
-http://localhost:8070/iBusiness/WxCart/getRedisInfo.do?key=yxj_154126&type=
 
-喊话登陆：	
-http://www.yunhud.com/ymgame/shout/login-shout.html?gameid=ca2c8a232be64c17b2788cabb513a7fe&token=e50a8564-9fb8-442f-acd1-6a5614329535-2197
-
-//服务团报登录
-
-http://localhost:9999/ymgame/register/login.html?gameid=7289e272-7742-40e1-9171-7a1c78b9c86f&token=1
-
-http://www.yunhud.com/ymgame/register/login.html?gameid=636c54b3-e74b-45a1-a738-c14cca367631&token=8d2e5cae-b452-477d-8435-4d81c9394703-3239
-
-http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
-
-http://localhost:8066/iBusiness/youmahui/login.html?token=qiseliu
-http://localhost:8066/iBusiness/youmahui/near-shop.html
-
-正式：
-http://www.umahui.com/iBusiness/youmahui/login.html?token=07b64b76-e9de-48b4-a17d-f1e6aae605b8
-
-http://www.umahui.com/iBusiness/youmahui/salemarket.html?id=270cb683-6a49-44f4-b697-6569813a9e58
-
-91批销：
-http://www.dxehdt.com/iBusiness/youmahui/login.html?token=37510030-2fa5-4bfe-82ed-aca03d05031e
-本地：
-http://localhost:8070/iBusiness/youmahui/login.html?token=liujian
-
-http://localhost:8070/iBusiness/youmahui/salemarket.html?id=8a6a22f1-b7dd-4aed-9907-cb827c1f407d
-测试：
-https://www.youmahui.net/iBusiness/xcxumahui/login.html?token=853ca804-86c4-48a8-9f96-b36b9ced139e
 

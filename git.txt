@@ -1,26 +1,26 @@
 git config user.name "superLiwl"
 git config user.email 'lwl.286131719@163.com'
+rdf1234!
 
+git clone git@39.105.229.28:root/youma-ui.git
 
-git@39.105.229.28:root/youma-ui.git
+git clone git@39.105.229.28:root/youma.git
 
-git@39.105.229.28:root/youma.git
+git clone git@39.105.229.28:root/pigx-upms.git
 
-git@39.105.229.28:root/pigx-upms.git
+git clone git@39.105.229.28:root/pigx-visual.git
 
-git@39.105.229.28:root/pigx-visual.git
+git clone git@39.105.229.28:root/ymgame-service.git
 
-git@39.105.229.28:root/ymgame-service.git
+git clone git@39.105.229.28:root/ymh-service.git
 
-git@39.105.229.28:root/ymh-service.git
+git clone git@39.105.229.28:root/pigx-common.git
 
-git@39.105.229.28:root/pigx-common.git
- 
-git@39.105.229.28:root/pigx-gateway.git
+git clone git@39.105.229.28:root/pigx-gateway.git
 
-git@39.105.229.28:root/pigx-auth.git
+git clone git@39.105.229.28:root/pigx-auth.git
 
-git@39.105.229.28:root/pigx-register.git
+git clone git@39.105.229.28:root/pigx-register.git
 
 优妈慧IB-git地址：
 	git@39.105.229.28:youmakeji/ibusiness.git
