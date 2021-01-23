@@ -1,0 +1,94 @@
+//清除上级 按照租户
+//UPDATE `shop_user` SET INVITEID = null WHERE tenant_id = 91;
+
+//直播---作弊清楚sql----------------------------------------------------------------------------start------------
+SELECT s.id,u.nickName,u.headpicurl,u.mobile,s.create_time FROM `ib_shareactivity_scan` s LEFT JOIN shop_user u ON s.mid = u.id 
+WHERE s.share_mid = 203034 AND mobile is not NULL ORDER BY s.create_time ASC;
+
+DELETE FROM ib_shareactivity_scan WHERE share_mid = 203034 AND id != '6bf4fd6d-41a2-4327-a8e8-fc3a94131435'
+//直播---作弊清楚sql-----------------------------------------------------------------------------end-----------
+
+//一个租户下多个店
+SELECT count(id),tenant_id FROM `shop_store` GROUP BY tenant_id;
+
+//sql增加字段
+alter table shop_orderform add luck_group_activity_id varchar(64) COMMENT '手气拼团-活动id';
+alter table shop_orderform add luck_group_id varchar(64) COMMENT '手气拼团-团id';
+alter table shop_orderform add luck_group_status varchar(2) DEFAULT '0' COMMENT '手气拼团-拼团状态 0-未成团  1-已成团';
+
+
+/次卡新增字段
+alter table ib_registerform add surplus_count bigint(20) COMMENT '剩余数量';
+alter table ib_registerform add user_count bigint(20) COMMENT '已使用数量';
+alter table ib_redenvelopeconf_s add card_count varchar(20) COMMENT '次卡次数';
+
+
+//商品部分数据清楚脚本
+SELECT * from `shop_goodsbrand` WHERE tenant_id = 440;
+SELECT * FROM shop_brandcategory WHERE tenant_id = 440;
+SELECT * from `shop_usergoodsclass` WHERE tenant_id = 440;
+UPDATE `shop_goods` set deleteStatus ='1' WHERE tenant_id = 440;
+
+
+密码修改；http://127.0.0.1:8980/vote/a/sys/user/info?op=pwd
+
+system  Tgjt@2020#
+
+hrbsdw  6qhvb23a
+wcsdw   85ghj984
+szsdw   !ijh5f6g
+byxdw   965!ddsa
+
+
+服务器：10.123.6.11 zongdui123$%^789
+
+gjjsmain hj8hfm2!
+
+
+数据库密码：  Tgjt2020
+端口 ：  80
+
+//修改最大连接数
+set global max_connections=2000;
+//查看最大连接数
+show variables like 'max_connections';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
