@@ -33,6 +33,11 @@ q: 不保存文件并退出vi 编辑
 for /r %i in (*.lastUpdated) do del %i
 
 
+//idea启动 Command line is too long
+在workspace.xml中
+找到<component name="PropertiesComponent">，
+在里面添加<property name="dynamic.classpath" value="true" />即可
+
 nginx启动命令:
 
 start nginx
