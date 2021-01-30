@@ -14,6 +14,8 @@ http://localhost:9999/ymgame/register/loginRevision.html?gameid=17390fea-d6de-42
 //服务团报登录---分享链接
 http://localhost:9999/ymgame/register/home.html?gameid=17390fea-d6de-4216-8131-8007b80d88a1&shareid=113358&shareidGame=147689
 
+http://localhost:9999/ymgame/register/home.html?gameid=17390fea-d6de-4216-8131-8007b80d88a1&token=36f7d2b3-00c4-46a6-afee-2834ec951162-3788
+
 http://www.yunhud.com/ymgame/register/login.html?gameid=926a6597-f9e5-4111-90c1-ad07383b4fec&token=36f7d2b3-00c4-46a6-afee-2834ec951162-3788
 
 http://www.yunhud.com/ymgame/register/newlogin.html?gameid=e047e546-f04b-487c-be6f-d84655e5b763
@@ -45,7 +47,7 @@ http://localhost:8070/iBusiness/youmahui/salemarket.html?id=8a6a22f1-b7dd-4aed-9
 https://www.youmahui.net/iBusiness/xcxumahui/login.html?token=853ca804-86c4-48a8-9f96-b36b9ced139e
 
 //cloud商城
-http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:21623a2f-5585-4ac2-a102-aa342c8b1609-6008
+http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:255d205d-64e6-4cff-824b-35a35a0dc9bb-6366
 http://localhost:9999/ymh/yhdapplet/login.html?storeId=1&token=1:255d205d-64e6-4cff-824b-35a35a0dc9bb-6366&inviteId=113330
 
 http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:21623a2f-5585-4ac2-a102-aa342c8b1609-6008&shareVipUserId=195766#vip.html
