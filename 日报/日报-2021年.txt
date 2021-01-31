@@ -39,6 +39,7 @@
 01月28日：
 01月29日：
 ----------------------------------------------------------------------------------------
+02月01日：串租户问题
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -59,3 +60,31 @@ ORDER BY count DESC;
 SELECT r.user_name,r.help_count,l.title FROM `live_help_rank` r
 INNER JOIN live_home_config l ON r.live_id = l.id
  WHERE r.live_id in(SELECT id FROM `live_home_config` WHERE tab_id = '634a7d3e91a362eb1cf9785e51e842aa') ORDER BY live_id,help_count DESC;
+ 
+ 
+ 
+ UPDATE `youma`.`shop_orderform` SET `id`='105038', `addTime`='2021-01-30 14:08:25', `deleteStatus`='\0', 
+ `finishTime`=NULL, `goods_amount`=NULL, `invoice`=NULL, `invoiceType`='0', `msg`=NULL, `order_id`='T2101301408253091358', 
+ `order_status`='20', `payTime`='2021-01-30 14:08:37', `pay_msg`=NULL, `refund`=NULL, `refund_type`=NULL, `shipCode`=NULL, 
+ `shipTime`=NULL, `ship_price`=NULL, `totalPrice`='69.00', `addr_id`=NULL, `payment_id`='1', `store_id`='468', `user_id`='299288',
+ `auto_confirm_email`='\0', `auto_confirm_sms`='\0', `transport`='上门自提', `out_order_id`='2101301408253091358', `sum_out_order_id`=NULL, 
+ `ec_id`=NULL, `ci_id`=NULL, `order_seller_intro`=NULL, `return_shipCode`=NULL, `return_ec_id`=NULL, `return_content`=NULL, `return_shipTime`=NULL, 
+ `order_type`='live', `delivery_date`=NULL, `carriage`='0.00', `falseOrder`=NULL, `recusername`=NULL, `recuseradd`='  ', `recusermobile`=NULL, 
+ `seckillId`=NULL, `seckillType`='2', `goods_img`='https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/1/30/2264e01c-c12d-40af-9abf-83724c56c2e7.jpg',
+ `station_id`='a4053ccd-7ba9-48da-bc30-1223649f7850', `station_name`='安国店', `gc_id`='203920', `goods_count`='1', `samekey`=NULL, `redId`=NULL, 
+ `redreduce`='0.00', `deliveryPerson`=NULL, `completPerson`=NULL, `deliveryDate`=NULL, `completDate`=NULL, `collage_actid`=NULL, `collage_id`=NULL, 
+ `storereduce`='0.00', `disno`=NULL, `giveno`=NULL, `is_timing`='0', `couriercompany`=NULL, `couriernumber`=NULL, `saleno`=NULL, `boothsid`=NULL, `boothsuserid`=NULL,
+ `adjustPrice`='0.00', `buyUserName`=NULL, `buyUserCard`=NULL, `transaction_id`=NULL, `address_pro_cit_cou`=NULL, `pay_appid`='wxa0057f5ec2fa571a', `mch_id`='1491782762',
+ `tenant_id`='480', `parent_tenant_id`=NULL, `solitaire_id`=NULL, `solitaire_refund`='0', `solitaire_refund_money`='0.00', `luck_group_activity_id`=NULL, `luck_group_id`=NULL, 
+ `luck_group_sign`='0' WHERE (`id`='105038');
+
+
+105206----没改
+105038----userid  299288  改成 298524
+
+
+
+105519----没改  301747
+105348----userid  301949  改成 301747
+105388----userid  301949  改成 301747
+105515----userid  301949  改成 301747
