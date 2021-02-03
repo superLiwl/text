@@ -33,8 +33,8 @@
           商城小程序商城首页分享。
 		  商城小程序我的二维码变成小程序码。
 ----------------------------------------------------------------------------------------
-01月25日：单品宝bug优化。
-01月26日：1595,1591,1596。
+01月25日：
+01月26日：
 01月27日：
 01月28日：
 01月29日：
@@ -44,8 +44,12 @@
 		  同步修改优互播。优互播与第三方小程序发版。
 		  替换导航条的图片。
 		  商城小程序去掉钱包支付。
-02月02日：bug1685
-02月03日：
+02月02日：bug1685,1701,1686,1705
+		  创建店铺--默认【母婴】， 只有母婴和 零售2个选项
+		  创建店铺--手机号可以不填， 店铺名称填写即可
+		  店铺信息增加行业的显示
+02月03日：1687,1683，1703,1684,1583
+		  处理一单串租户的订单。
 02月04日：
 02月05日：
 ----------------------------------------------------------------------------------------
@@ -87,6 +91,10 @@ INNER JOIN live_home_config l ON r.live_id = l.id
  `luck_group_sign`='0' WHERE (`id`='105038');
 
 
+UPDATE `youma`.`bag_cardticket` SET `id`='68efe72d-637c-11eb-ab56-7cd30ae00894', `tenant_id`='480', `del_flag`='0', `base_no`='XRVL3127', `create_time`='2021-01-31 12:25:55', `card_name`='【年货节】69低100宏姐串串香代金券', `store_id`='468', `money`='69.00', `limit_money`='100.00', `validity_day`=NULL, `begin_date`='2021-01-30', `end_date`='2021-04-30', `card_type`='6', `use_type`='mall', `in_ids`='', `out_ids`='', `card_flag`='1', `user_id`='296090', `get_time`='2021-01-30 14:41:42', `get_type`='goodsbuy', `base_id`='6cc66408-452f-4afc-a2fd-99ae045cef28', `game_id`='', `game_type`='goodsbuy', `conf_id`=NULL, `order_no`='T2101301441309383506', `big_cardid`=NULL, `update_time`=NULL, `update_uid`=NULL, `update_stationid`=NULL, `update_mark`=NULL, `card_img`='', `digital_code`=NULL, `surplus_count`='0', `user_count`='0' WHERE (`id`='68efe72d-637c-11eb-ab56-7cd30ae00894');
+
+
+296090---的订单改成--301337
 105206----没改
 105038----userid  299288  改成 298524
 
