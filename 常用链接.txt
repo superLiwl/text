@@ -69,7 +69,7 @@ https://www.youmahui.net/iBusiness/youmahui/staffAssistantApp/staff_login.html
 http://localhost:8070/iBusiness/youmahui/staffAssistantApp/staff_login.html
 
 //saas 员工助手
-http://localhost:9999/ymh/store/store.um?mobile=13313656219&companyid=1
+http://localhost:9999/ymh/store/store.um?mobile=15004514464&companyid=1
 
 
 //砍价
