@@ -56,13 +56,22 @@
 02月05日：手气拼团，会员商品  底部导航根据小程序修改。
 		  员工助手扫码快速登录---不需要选择部门。
 ----------------------------------------------------------------------------------------
-02月07日：1743,1737,1736,1735
-02月08日：
-02月09日：
+02月07日：1743,1737,1736,
+		  插入优惠券的地方增加erp的新字段。
+02月08日：1681,1669,1668,1735,1668,1680,1770。
+02月09日：1758,1759,1771。
+		  H5支持段视频播放，用代码暂停，播放功能，有监听播放，监听暂停功能，可以禁止全屏播放（不确定是否全ios，安卓版本兼容）。
 02月10日：
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
+
+//小程序视频播放暂停
+
+var videoContext = wx.createVideoContext('videoqwe') //这里对应的视频id
+    videoContext.pause();
+    videoContext.play();
+	
 商城小程序--海报分享
 
 INSERT INTO `youma`.`shop_store` (`id`, `addTime`, `deleteStatus`, `card_approve`, `realstore_approve`, `store_address`, `store_credit`, `store_info`, `store_msn`, `store_name`, `store_ower`, `store_ower_card`, `store_qq`, `store_recommend`, `store_recommend_time`, `store_seo_description`, `store_seo_keywords`, `store_status`, `store_telephone`, `store_zip`, `template`, `validity`, `violation_reseaon`, `area_id`, `card_id`, `grade_id`, `sc_id`, `store_banner_id`, `store_license_id`, `store_logo_id`, `update_grade_id`, `domain_modify_count`, `store_second_domain`, `favorite_count`, `store_lat`, `store_lng`, `store_ww`, `map_type`, `delivery_begin_time`, `delivery_end_time`, `combin_begin_time`, `combin_end_time`, `weixin_begin_time`, `weixin_end_time`, `weixin_status`, `weixin_appId`, `weixin_appSecret`, `weixin_token`, `weixin_welecome_content`, `weixin_qr_img_id`, `weixin_account`, `store_weixin_logo_id`, `weixin_store_name`, `store_type`, `store_color`, `lng`, `lat`, `beginTime`, `endTime`, `arrived_time`, `startMoney`, `carriage`, `serviceArea`, `buyer_attention`, `delivery_tel`, `delivery_name`, `site_id`, `stationkey`, `storetype`, `main_business`, `sortIndex`, `wxsub`, `tenant_id`, `store_uuid`, `switch1`, `area`, `city`, `province`, `import_excel_flag`, `import_excel_msg`, `import_excel_file_name`, `import_excel_time`, `applet_img`, `bind_mobile`, `live_img`, `delivery`, `is_shop_cart`, `share_img`, `is_push`, `banner_bg`, `shop_share_img`, `shop_share_title`, `shop_share_msg`) VALUES ('92', '2020-09-22 15:48:51', '\0', NULL, NULL, '', NULL, NULL, NULL, '15004514464', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '15004514464', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '55', '904bd669-633a-4dbb-b07a-1fccf905af55', '0000000000', NULL, NULL, '0', '0', NULL, NULL, NULL, '', '0', '20200922/a1cad2e9-ed9a-4e62-aae6-c0a5f659319e.png', '0', '0', NULL, '0', NULL, NULL, NULL, NULL);
@@ -79,35 +88,3 @@ ORDER BY count DESC;
 SELECT r.user_name,r.help_count,l.title FROM `live_help_rank` r
 INNER JOIN live_home_config l ON r.live_id = l.id
  WHERE r.live_id in(SELECT id FROM `live_home_config` WHERE tab_id = '634a7d3e91a362eb1cf9785e51e842aa') ORDER BY live_id,help_count DESC;
- 
- 
- 
- UPDATE `youma`.`shop_orderform` SET `id`='105038', `addTime`='2021-01-30 14:08:25', `deleteStatus`='\0', 
- `finishTime`=NULL, `goods_amount`=NULL, `invoice`=NULL, `invoiceType`='0', `msg`=NULL, `order_id`='T2101301408253091358', 
- `order_status`='20', `payTime`='2021-01-30 14:08:37', `pay_msg`=NULL, `refund`=NULL, `refund_type`=NULL, `shipCode`=NULL, 
- `shipTime`=NULL, `ship_price`=NULL, `totalPrice`='69.00', `addr_id`=NULL, `payment_id`='1', `store_id`='468', `user_id`='299288',
- `auto_confirm_email`='\0', `auto_confirm_sms`='\0', `transport`='上门自提', `out_order_id`='2101301408253091358', `sum_out_order_id`=NULL, 
- `ec_id`=NULL, `ci_id`=NULL, `order_seller_intro`=NULL, `return_shipCode`=NULL, `return_ec_id`=NULL, `return_content`=NULL, `return_shipTime`=NULL, 
- `order_type`='live', `delivery_date`=NULL, `carriage`='0.00', `falseOrder`=NULL, `recusername`=NULL, `recuseradd`='  ', `recusermobile`=NULL, 
- `seckillId`=NULL, `seckillType`='2', `goods_img`='https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/1/30/2264e01c-c12d-40af-9abf-83724c56c2e7.jpg',
- `station_id`='a4053ccd-7ba9-48da-bc30-1223649f7850', `station_name`='安国店', `gc_id`='203920', `goods_count`='1', `samekey`=NULL, `redId`=NULL, 
- `redreduce`='0.00', `deliveryPerson`=NULL, `completPerson`=NULL, `deliveryDate`=NULL, `completDate`=NULL, `collage_actid`=NULL, `collage_id`=NULL, 
- `storereduce`='0.00', `disno`=NULL, `giveno`=NULL, `is_timing`='0', `couriercompany`=NULL, `couriernumber`=NULL, `saleno`=NULL, `boothsid`=NULL, `boothsuserid`=NULL,
- `adjustPrice`='0.00', `buyUserName`=NULL, `buyUserCard`=NULL, `transaction_id`=NULL, `address_pro_cit_cou`=NULL, `pay_appid`='wxa0057f5ec2fa571a', `mch_id`='1491782762',
- `tenant_id`='480', `parent_tenant_id`=NULL, `solitaire_id`=NULL, `solitaire_refund`='0', `solitaire_refund_money`='0.00', `luck_group_activity_id`=NULL, `luck_group_id`=NULL, 
- `luck_group_sign`='0' WHERE (`id`='105038');
-
-
-UPDATE `youma`.`bag_cardticket` SET `id`='68efe72d-637c-11eb-ab56-7cd30ae00894', `tenant_id`='480', `del_flag`='0', `base_no`='XRVL3127', `create_time`='2021-01-31 12:25:55', `card_name`='【年货节】69低100宏姐串串香代金券', `store_id`='468', `money`='69.00', `limit_money`='100.00', `validity_day`=NULL, `begin_date`='2021-01-30', `end_date`='2021-04-30', `card_type`='6', `use_type`='mall', `in_ids`='', `out_ids`='', `card_flag`='1', `user_id`='296090', `get_time`='2021-01-30 14:41:42', `get_type`='goodsbuy', `base_id`='6cc66408-452f-4afc-a2fd-99ae045cef28', `game_id`='', `game_type`='goodsbuy', `conf_id`=NULL, `order_no`='T2101301441309383506', `big_cardid`=NULL, `update_time`=NULL, `update_uid`=NULL, `update_stationid`=NULL, `update_mark`=NULL, `card_img`='', `digital_code`=NULL, `surplus_count`='0', `user_count`='0' WHERE (`id`='68efe72d-637c-11eb-ab56-7cd30ae00894');
-
-
-296090---的订单改成--301337
-105206----没改
-105038----userid  299288  改成 298524
-
-
-
-105519----没改  301747
-105348----userid  301949  改成 301747
-105388----userid  301949  改成 301747
-105515----userid  301949  改成 301747

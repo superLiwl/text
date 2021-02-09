@@ -53,9 +53,13 @@ http://localhost:9999/ymh/yhdapplet/login.html?storeId=1&token=1:255d205d-64e6-4
 http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:21623a2f-5585-4ac2-a102-aa342c8b1609-6008&shareVipUserId=195766#vip.html
 
 
-https://www.youmahui.net/ymh/youmahui/login.html?storeId=1&token=1:21623a2f-5585-4ac2-a102-aa342c8b1609-6008
+https://www.youmahui.net/ymh/yhdapplet/login.html?storeId=1&token=1:255d205d-64e6-4cff-824b-35a35a0dc9bb-6366
+
+https://www.youmahui.net/ymh/youmahui/login.html?storeId=1&token=1:255d205d-64e6-4cff-824b-35a35a0dc9bb-6366
 
 https://www.yunhud.com/ymh/youmahui/login.html?storeId=292&token=292:e9b54eb6-f471-4cef-9379-358fbb435509-9083
+
+https://www.yunhud.com/ymh/yhdapplet/video.html
 //手气拼团地址
 https://www.youmahui.net/ymh/youmahui/spell-group.html?activityId=e238c78d-4ca2-4e9b-9ab3-c5896fdbc867
 
