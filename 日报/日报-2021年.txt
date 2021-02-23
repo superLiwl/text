@@ -70,8 +70,8 @@
 02月22日：解决手气拼团oss图片跨域海报生成不出来的bug。
 		  直播店铺id丢失bug。
 		  jenkins环境搭建（40%）：jenkins服务器启动，jenkins--jdk配置、maven配置、git配置、部分插件安装（按需安装，暂时不全）
-02月23日：
-02月24日：
+02月23日：搭建maven私服仓库，调试 maven deploy。
+02月24日：调试用maven私服打包。
 02月25日：
 02月26日：
 https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/2/21/62d0cb4e-cbe5-40ed-8ad2-64dd6b0f8692.jpg
