@@ -77,4 +77,9 @@
 https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/2/21/62d0cb4e-cbe5-40ed-8ad2-64dd6b0f8692.jpg
 https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/2/22/ab4e4053-a227-428c-9ee1-43cdd4518b8a.jpg
 ----------------------------------------------------------------------------------------
+
+mvn clean package -pl pigx-mp-manager -am
+
+ps -ef |grep tomcat-center | grep -v grep |awk '{print $2}'|xargs kill -9
+
 ----------------------------------------------------------------------------------------
