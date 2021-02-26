@@ -72,10 +72,8 @@
 		  jenkins环境搭建（40%）：jenkins服务器启动，jenkins--jdk配置、maven配置、git配置、部分插件安装（按需安装，暂时不全）
 02月23日：搭建maven私服仓库，调试 maven deploy。
 02月24日：调试用maven私服打包,并且把包推送到服务器。
-02月25日：解决单独打子包的问题。
-02月26日：写脚本启动，终止进程。
-https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/2/21/62d0cb4e-cbe5-40ed-8ad2-64dd6b0f8692.jpg
-https://youmahui.oss-cn-beijing.aliyuncs.com/image/1/2021/2/22/ab4e4053-a227-428c-9ee1-43cdd4518b8a.jpg
+02月25日：解决单独打子包的问题，执行脚本。
+02月26日：调试启动测试环境。
 ----------------------------------------------------------------------------------------
 
 mvn clean package -pl pigx-mp-manager -am
@@ -83,3 +81,23 @@ mvn clean package -pl pigx-mp-manager -am
 ps -ef |grep tomcat-center | grep -v grep |awk '{print $2}'|xargs kill -9
 
 ----------------------------------------------------------------------------------------
+
+#!/bin/bash
+source ~/.bash_profile
+source /etc/profile
+cd /root/cloud/jenkins
+ps -ef |grep ymgame | grep -v grep |awk '{print $2}'|xargs kill -9
+chmod 777 *
+ymgamedate=ymgame_`date +%Y%m%d`_`date +%H%M%S`
+mkdir $ymgamedate
+mv ymgame-service.jar /root/cloud/jenkins/$ymgamedate
+cp ymgame.sh /root/cloud/jenkins/$ymgamedate/
+cd $ymgamedate
+jar -xvf ymgame-service.jar
+echo 'build ymgame success'
+sh /root/cloud/jenkins/$ymgamedate/ymgame.sh
+
+
+
+tail -n 800 /root/cloud/jenkins/mp_20210226/*.out |grep -A 200 "The following profiles are active" 
+

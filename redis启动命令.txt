@@ -12,7 +12,7 @@ npm run build
 
 linux启动命令：
 	nohup java org.springframework.boot.loader.JarLauncher mp &
-	nohup java org.springframework.boot.loader.JarLauncher ymgame &
+	nohup java org.springframework.boot.loader.JarLauncher ymgame 2>&1 &
 	nohup java org.springframework.boot.loader.JarLauncher ymh &
 	nohup java org.springframework.boot.loader.JarLauncher center &
 	tail -f nohup.out
