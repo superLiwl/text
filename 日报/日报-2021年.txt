@@ -75,37 +75,15 @@
 02月25日：解决单独打子包的问题，执行脚本。
 02月26日：调试启动测试环境，测试环境启动成功。
 ----------------------------------------------------------------------------------------
-03月01日：jenkins增加启动服务的日志打印。
-03月02日：
+03月01日：jenkins增加启动服务的日志打印，是否成功启动服务的配置，调整git分支为dev。
+03月02日：jenkins配置center。
 03月03日：
 03月04日：
 03月05日：
 ----------------------------------------------------------------------------------------
-
-mvn clean package -pl pigx-mp-manager -am
-
-ps -ef |grep tomcat-center | grep -v grep |awk '{print $2}'|xargs kill -9
-
-tail -f nohup.out | sed '/service-start-success/q'
-
+03月08日：
+03月09日：
+03月10日：
+03月11日：
+03月12日：
 ----------------------------------------------------------------------------------------
-
-#!/bin/bash
-source ~/.bash_profile
-source /etc/profile
-cd /root/cloud/jenkins
-ps -ef |grep ymgame | grep -v grep |awk '{print $2}'|xargs kill -9
-chmod 777 *
-ymgamedate=ymgame_`date +%Y%m%d`_`date +%H%M%S`
-mkdir $ymgamedate
-mv ymgame-service.jar /root/cloud/jenkins/$ymgamedate
-cp ymgame.sh /root/cloud/jenkins/$ymgamedate/
-cd $ymgamedate
-jar -xvf ymgame-service.jar
-echo 'build ymgame success'
-sh /root/cloud/jenkins/$ymgamedate/ymgame.sh
-
-
-
-tail -n 800 /root/cloud/jenkins/mp_20210226/*.out |grep -A 200 "The following profiles are active" 
-

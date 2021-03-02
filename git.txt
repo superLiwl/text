@@ -22,6 +22,8 @@ git clone git@39.105.229.28:root/pigx-auth.git
 
 git clone git@39.105.229.28:root/pigx-register.git
 
+git clone git@39.105.229.28:youmakeji/center-stage.git
+
 优妈慧IB-git地址：
 	git@39.105.229.28:youmakeji/ibusiness.git
 
