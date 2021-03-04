@@ -17,8 +17,8 @@ linux启动命令：
 	nohup java org.springframework.boot.loader.JarLauncher center &
 	tail -f nohup.out
 	ps -ef |grep java
-	
 	nohup java -jar pigx-gateway.jar gateway >nohup.out &
+	nohup java -jar pigx-register.jar register >nohup.out &
 	
 windows启动命令：
 	java org.springframework.boot.loader.JarLauncher mp 
