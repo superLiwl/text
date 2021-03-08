@@ -55,6 +55,25 @@ show variables like 'max_connections';
 
 
 
+//请租户部分信息
+//--------------先查
+SELECT * FROM `sys_tenant` WHERE `code` = '15004514464';
+
+DELETE FROM `sys_tenant` WHERE `code` = '15004514464';
+DELETE FROM `sys_user` WHERE tenant_id = 564;
+DELETE FROM `sys_tenant_profile` WHERE tenant_id = 564;
+DELETE FROM `shop_store` WHERE tenant_id = 564;
+DELETE FROM `sys_dept` WHERE tenant_id = 564;
+
+//--------------先查
+SELECT * FROM `sys_role` WHERE tenant_id = 564;
+DELETE FROM `sys_role` WHERE tenant_id = 564;
+DELETE FROM `sys_role_menu` WHERE role_id = 567;
+
+
+
+
+
 
 
 
