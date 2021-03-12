@@ -47,7 +47,7 @@ http://localhost:8070/iBusiness/youmahui/salemarket.html?id=8a6a22f1-b7dd-4aed-9
 https://www.youmahui.net/iBusiness/xcxumahui/login.html?token=853ca804-86c4-48a8-9f96-b36b9ced139e
 
 //cloud商城
-http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:255d205d-64e6-4cff-824b-35a35a0dc9bb-6366
+http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:3db1c557-35bb-46c5-8986-1a9d62d33cca-9795
 http://localhost:9999/ymh/yhdapplet/login.html?storeId=1&token=1:255d205d-64e6-4cff-824b-35a35a0dc9bb-6366&inviteId=113330
 
 http://localhost:9999/ymh/youmahui/login.html?storeId=1&token=1:21623a2f-5585-4ac2-a102-aa342c8b1609-6008&shareVipUserId=195766#vip.html

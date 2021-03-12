@@ -85,7 +85,23 @@
 		  1822-【注册】PC端注册成功没有收到成功短信推送。
 03月09日：1833【付费会员】付费会员订单页面添加会员手机号筛选。
 		  1676-【优惠券】订单支付发放优惠券功能暂不能使用。
-03月10日：
-03月11日：
-03月12日：
+03月10日：1625-【SAAS--用户注册信息】
+		  1692 新客注册-会员注册填写会员信息的页面优化
+		  2064 复制验证码bug
+03月11日：1786 【优惠券】SaaS版，用AVUE重新开发【优惠券营销】页面   40%
+03月12日：1786 【优惠券】SaaS版，用AVUE重新开发【优惠券营销】页面
+
+
+540051
+
+
+ALTER TABLE `ib_redenvelopeconf`
+MODIFY COLUMN `RECHARGEMONEY`  double(8,2) NULL DEFAULT NULL COMMENT '充值金额' AFTER `ENDTIME`,
+ADD COLUMN `GRABTIMES`  int(4) NULL COMMENT '可参与次数' AFTER `share_img`,
+ADD COLUMN `GRABCOUNT`  int(4) NULL COMMENT '每次参与领取张数' AFTER `GRABTIMES`,
+ADD COLUMN `COUNTTYPE`  varchar(4) NULL COMMENT '\'1\'单品，\'2\'混品' AFTER `GRABCOUNT`,
+ADD COLUMN `SENDTYPE`  varchar(4) NULL COMMENT '\'0\'正常，‘1’用券不发放' AFTER `COUNTTYPE`;
+
+
+
 ----------------------------------------------------------------------------------------
